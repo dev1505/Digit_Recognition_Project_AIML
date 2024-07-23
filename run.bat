@@ -1,0 +1,6 @@
+@echo off
+echo Starting Backend...
+start cmd /k "cd C:\Users\devsh\OneDrive\Desktop\Digit_Recognition && uvicorn digit_recognition_backend:app --reload"
+echo Starting Frontend...
+start cmd /k "cd C:\Users\devsh\OneDrive\Desktop\Digit_Recognition\digit_recognition_frontend && npm run dev"
+pause
