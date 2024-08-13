@@ -62,6 +62,7 @@ export default function predict() {
         <div
           className="
         flex ...
+        flex-wrap-reverse
         border-2
         border-white
         rounded-md
@@ -111,9 +112,9 @@ export default function predict() {
             border-2
             border-white
             rounded-md
-            my-10
-            mr-10
+            m-10
             p-5
+            gap-5
             flex-col
             w-62
             justify-around
@@ -131,9 +132,7 @@ export default function predict() {
                 only, so please upload images with single digits only.
               </Alert>
             </div>
-            <div className="
-            mt-15
-            ">
+            <div>
               <Alert severity="success">
                 {prediction ? (
                   <div>
